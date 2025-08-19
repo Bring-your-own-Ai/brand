@@ -1,35 +1,30 @@
-# .NET Brand Guidelines
+# Aiotize Inc. Design System & Brand Assets
 
-The purpose of these guidelines is to provide a framework for communicating with the .NET developer community and establishing a consistent brand identity. This repo serves as a guide and reference to designers, writers, and developers to create consistent, on-brand content for .NET. 
+This repository hosts Aiotize Inc.'s design system, brand assets, and public documentation site. The visual language is inspired by the clean, minimal aesthetic of Perplexity while preserving Aiotize's display wordmark for `AI` and `AIOTIZE INC`.
 
-Read the [.NET Brand Guidelines](dotnet-styleGuide-2024.pdf).
+## Quick Links
 
-## Logo
+- Design tokens and themes: `aiotize/design-system/tokens`
+- Core UI styles and components: `aiotize/design-system/{themes,components}`
+- Brand assets (logo, fonts, palettes, templates): `aiotize/brand`
+- Public site (auto-deployed): `docs/`
 
-The .NET logo is one of the most simple and direct visual representations of the .NET brand. The .NET logo purple color is #512bd4. Please read the brand guidelines for proper uses of the logo. 
+## Getting Started
 
-See the [logo](/logo) folder.
+1. Browse the live documentation site after the first successful deployment (GitHub Pages). It showcases tokens, components, and downloadable assets.
+2. Update colors, spacing, typography, and motion via `aiotize/design-system/tokens/tokens.json`. CSS variables are generated in `tokens.css` for direct consumption.
+3. Keep the `AI` and `AIOTIZE INC` display typeface when updating brand typography. Add the font files under `aiotize/brand/fonts/` and map them in `aiotize/brand/fonts/font.css`.
 
-## Illustrations
-These illustrations are more than sketches, they’re stories full of character, delightful surprises—and layers of meaning, many containing the [dotnet-bot](https://github.com/dotnet-bot). The dotnet-bot represents the community that comes with the .NET brand and platform. Dotnet-bot also helps with checking pull-requests on .NET repos. Please read the brand guidelines for proper uses. 
+## Directory Overview
 
-See the [spot-illustrations](/spot-illustrations) folder.
+- `aiotize/design-system/` — Design tokens, themes (light/dark), and baseline components (button, card).
+- `aiotize/brand/` — Logos, fonts, color palettes, templates, creative backgrounds, and layout grids.
+- `docs/` — Static site used for GitHub Pages to preview the system and host downloads.
 
-## Presentation Template
-You can use the presentation template as a starting point for your presentations to the .NET developer community. It contains type, theme colors, and illustrations that follow the brand guidelines. 
+## Contributing
 
-See the [presentation-template](/presentation-template) folder.
-
-## Type
-
-The Open Sans typeface helps express the humanity in our voice and personality across all our communications. Open Sans is an open source typeface designed by Steve Matteson, Type Director of Ascender Corp.
-
-You can download it from Google Fonts: [fonts.google.com/specimen/Open+Sans](https://fonts.google.com/specimen/Open+Sans) 
+Open a pull request with clear descriptions and screenshots for visual changes. Follow conventional commits where possible.
 
 ## License
 
-Illustrations in the brand repo are licensed under the very permissive [CC0 1.0 Universal license](https://github.com/dotnet/brand/blob/master/LICENSE). You may use the artwork to create your own .NET swag items to give away at community events, use the presentation template for your presentations, and use the illustrations and logo to represent .NET in related content, per the [.NET Brand Guidelines](dotnet-styleGuide-2024.pdf). 
-
-The .NET brand guidelines and .NET logo are copyright of the .NET authors. 
-
-The photos in the brand guidelines are all from [unsplash](https://unsplash.com) and are released under the [unsplash license](https://unsplash.com/license).
+Unless otherwise noted inside a subfolder, assets and code in this repository are provided under the license in `LICENSE`.

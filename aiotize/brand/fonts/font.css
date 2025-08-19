@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'AiotizeDisplay';
+  src: url('./AiotizeDisplay.woff2') format('woff2');
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Place AI/Aiotize display font files in this folder with the above names. */
