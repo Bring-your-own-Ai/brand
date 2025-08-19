@@ -1,0 +1,125 @@
+/*
+  Aiotize Inc. — Design Tokens
+  Inspired by Perplexity-like calm, oceanic dark UI with crisp contrast.
+  Keep `AI` and `AIOTIZE INC.` display marks as-is; other tokens are adaptable.
+*/
+
+/* Font faces (replace sources with licensed files in brand/fonts) */
+/* Example placeholders. Update URLs when you add real fonts. */
+@font-face {
+  font-family: "Aiotize Display";
+  src: local("Aiotize Display"), url("../brand/fonts/AiotizeDisplay.woff2") format("woff2");
+  font-weight: 400 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"), url("../brand/fonts/InterVariable.woff2") format("woff2-variations");
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: local("Space Grotesk"), url("../brand/fonts/SpaceGrotesk-Variable.woff2") format("woff2-variations");
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  /* Color palette (Dark as default) */
+  --color-bg: #0e232b;           /* deep ocean */
+  --color-bg-2: #0b1c23;         /* page root */
+  --color-surface: #142c35;      /* cards, surfaces */
+  --color-surface-2: #183743;    /* elevated surfaces */
+  --color-surface-3: #1e4654;    /* hover surfaces */
+  --color-border: #244552;
+  --color-text: #e8f3f7;
+  --color-text-muted: #a4bac1;
+  --color-accent: #59c7ff;       /* cerulean */
+  --color-accent-strong: #2ea1ff;
+  --color-accent-soft: #b9ecff;
+  --color-positive: #28c08e;
+  --color-warning: #f5a623;
+  --color-danger: #ff5d6e;
+
+  /* Gradient tokens */
+  --gradient-hero: radial-gradient(1200px 700px at 85% 85%, rgba(46,161,255,0.35), transparent 60%),
+                   radial-gradient(900px 600px at 5% 10%, rgba(89,199,255,0.28), transparent 55%),
+                   linear-gradient(180deg, #0b1c23 0%, #0e232b 30%, #132c35 100%);
+
+  /* Typography */
+  --font-sans: "Inter", system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  --font-display: "Aiotize Display", "Space Grotesk", var(--font-sans);
+
+  /* Type scale (approx 1.2 modular) */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-md: 16px;
+  --text-lg: 18px;
+  --text-xl: 20px;
+  --text-2xl: 24px;
+  --text-3xl: 30px;
+  --text-4xl: 36px;
+  --text-5xl: 48px;
+  --text-6xl: 60px;
+
+  /* Spacing (4px base) */
+  --space-1: 2px;
+  --space-2: 4px;
+  --space-3: 8px;
+  --space-4: 12px;
+  --space-5: 16px;
+  --space-6: 24px;
+  --space-7: 32px;
+  --space-8: 40px;
+  --space-9: 48px;
+  --space-10: 64px;
+
+  /* Radii */
+  --radius-xs: 6px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 18px;
+  --radius-pill: 999px;
+
+  /* Shadows */
+  --shadow-1: 0 1px 2px rgba(0,0,0,0.35), 0 2px 8px rgba(0,0,0,0.28);
+  --shadow-2: 0 6px 24px rgba(0,0,0,0.36);
+  --ring: 0 0 0 2px rgba(46,161,255,0.4);
+
+  /* Motion */
+  --ease-out: cubic-bezier(.17,.67,.29,1);
+  --ease-in: cubic-bezier(.48,.04,.52,.96);
+  --dur-fast: 120ms;
+  --dur-base: 200ms;
+  --dur-slow: 320ms;
+
+  /* Layout */
+  --container-max: 1200px;
+  --container-pad: 24px;
+  --grid-gap: 16px;
+}
+
+/* Light theme */
+:root[data-theme="light"] {
+  --color-bg: #f7fbfd;
+  --color-bg-2: #ffffff;
+  --color-surface: #ffffff;
+  --color-surface-2: #f2f7fa;
+  --color-surface-3: #e8f2f7;
+  --color-border: #dbe7ee;
+  --color-text: #0b1c23;
+  --color-text-muted: #4d6872;
+  --color-accent: #2ea1ff;
+  --color-accent-strong: #007be6;
+  --color-accent-soft: #cdeeff;
+  --gradient-hero: radial-gradient(1200px 700px at 85% 85%, rgba(0,123,230,0.12), transparent 60%),
+                   radial-gradient(900px 600px at 5% 10%, rgba(46,161,255,0.18), transparent 55%),
+                   linear-gradient(180deg, #ffffff 0%, #f7fbfd 60%, #eef6fa 100%);
+}
+

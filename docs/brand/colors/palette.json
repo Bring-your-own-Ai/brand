@@ -1,0 +1,21 @@
+{
+  "name": "Aiotize Oceanic",
+  "version": 1,
+  "colors": {
+    "bg": "#0e232b",
+    "bg2": "#0b1c23",
+    "surface": "#142c35",
+    "surface2": "#183743",
+    "surface3": "#1e4654",
+    "border": "#244552",
+    "text": "#e8f3f7",
+    "textMuted": "#a4bac1",
+    "accent": "#59c7ff",
+    "accentStrong": "#2ea1ff",
+    "accentSoft": "#b9ecff",
+    "positive": "#28c08e",
+    "warning": "#f5a623",
+    "danger": "#ff5d6e"
+  }
+}
+

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aiotize Design System</title>
+    <link rel="icon" href="./brand/logos/favicon.svg" />
+    <link rel="stylesheet" href="./design-system/tokens.css" />
+    <link rel="stylesheet" href="./design-system/components.css" />
+    <style>
+      .swatch { width: 120px; height: 72px; border-radius: var(--radius-sm); border: 1px solid var(--color-border); }
+      .swatches { display:grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; }
+      .k { font-size: var(--text-sm); color: var(--color-text-muted); }
+      .tokens { display:grid; grid-template-columns: 220px 1fr; gap: 12px; }
+      .footer { color: var(--color-text-muted); padding: 40px 0; text-align:center; }
+      .wordmark { font-family: var(--font-display); font-weight: 800; letter-spacing: 0.08em; font-size: var(--text-3xl); }
+      .mono { font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+      .preview-surface { background: var(--color-surface); border-radius: var(--radius-lg); border: 1px solid var(--color-border); padding: 16px; }
+    </style>
+  </head>
+  <body>
+    <header class="nav">
+      <div class="container inner">
+        <div class="brand"><img src="./brand/logos/favicon.svg" alt="AI" /><span>AIOTIZE INC.</span></div>
+        <div style="display:flex; align-items:center; gap: 10px;">
+          <button id="theme-toggle" class="btn btn-ghost">Toggle theme</button>
+          <button id="grid-toggle" class="btn btn-ghost">Grid</button>
+        </div>
+      </div>
+    </header>
+    <div class="grid-overlay" id="grid"></div>
+
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="wordmark">AIOTIZE INC.</div>
+          <h1 class="display">Design System</h1>
+          <p class="muted">Tokens, components, and brand assets inspired by a Perplexity‑like aesthetic.</p>
+          <div style="margin-top: var(--space-6); display:flex; gap:12px;">
+            <a class="btn btn-primary" href="./templates/landing.html">View Landing Template</a>
+            <a class="btn btn-ghost" href="./brand/colors/palette.json">Color JSON</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="container stack" style="padding: 40px 0 60px;">
+        <h2>Colors</h2>
+        <div class="swatches">
+          <div>
+            <div class="swatch" style="background: var(--color-bg);"></div>
+            <div class="k">bg</div>
+          </div>
+          <div>
+            <div class="swatch" style="background: var(--color-surface);"></div>
+            <div class="k">surface</div>
+          </div>
+          <div>
+            <div class="swatch" style="background: var(--color-accent);"></div>
+            <div class="k">accent</div>
+          </div>
+          <div>
+            <div class="swatch" style="background: var(--color-accent-strong);"></div>
+            <div class="k">accent-strong</div>
+          </div>
+          <div>
+            <div class="swatch" style="background: var(--color-positive);"></div>
+            <div class="k">positive</div>
+          </div>
+          <div>
+            <div class="swatch" style="background: var(--color-warning);"></div>
+            <div class="k">warning</div>
+          </div>
+          <div>
+            <div class="swatch" style="background: var(--color-danger);"></div>
+            <div class="k">danger</div>
+          </div>
+        </div>
+
+        <h2>Typography</h2>
+        <div class="stack">
+          <div class="display" style="font-size: var(--text-5xl);">Display 5xl — Aiotize Display</div>
+          <div style="font-size: var(--text-xl);">Body XL — Inter</div>
+          <div class="muted">Muted text example</div>
+        </div>
+
+        <h2>Components</h2>
+        <div class="row">
+          <div class="col">
+            <div class="card">
+              <h3>Buttons</h3>
+              <div style="display:flex; gap: 12px; flex-wrap: wrap;">
+                <button class="btn btn-primary">Primary</button>
+                <button class="btn">Default</button>
+                <button class="btn btn-ghost">Ghost</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <h3>Inputs</h3>
+              <div class="stack">
+                <input class="input" placeholder="Search" />
+                <textarea class="textarea" rows="3" placeholder="Message"></textarea>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card">
+              <h3>Tags</h3>
+              <div class="stack">
+                <span class="tag">AI</span>
+                <span class="tag">Drones</span>
+                <span class="tag">Automation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Code Sample</h2>
+        <div class="preview-surface">
+<pre><code class="mono">&lt;link rel="stylesheet" href="/design-system/tokens.css" /&gt;
+&lt;link rel="stylesheet" href="/design-system/components.css" /&gt;
+
+&lt;button class="btn btn-primary"&gt;Primary&lt;/button&gt;</code></pre>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">© 2025 Aiotize Inc. · Design System</div>
+    </footer>
+
+    <script>
+      const grid = document.getElementById('grid');
+      document.getElementById('grid-toggle').addEventListener('click', () => {
+        grid.classList.toggle('active');
+      });
+      const toggle = document.getElementById('theme-toggle');
+      toggle.addEventListener('click', () => {
+        const root = document.documentElement;
+        const isLight = root.getAttribute('data-theme') === 'light';
+        root.setAttribute('data-theme', isLight ? 'dark' : 'light');
+      });
+    </script>
+  </body>
+  
+</html>
+
