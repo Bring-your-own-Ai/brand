@@ -1,3 +1,19 @@
+# Fonts and binaries
+brand/fonts/*.otf
+brand/fonts/*.ttf
+brand/fonts/*.woff
+brand/fonts/*.woff2
+brand/fonts/*.eot
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build/preview tools
+node_modules
+dist
+.cache
+
 
 dotnet-bot-illustrations/.DS_Store
 dotnet-bot-illustrations/Wallpapers/.DS_Store

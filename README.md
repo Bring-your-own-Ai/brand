@@ -1,35 +1,25 @@
-# .NET Brand Guidelines
+## Aiotize Inc. — Design System & Brand Assets
 
-The purpose of these guidelines is to provide a framework for communicating with the .NET developer community and establishing a consistent brand identity. This repo serves as a guide and reference to designers, writers, and developers to create consistent, on-brand content for .NET. 
+This repository stores Aiotize Inc.'s design system, brand assets, and ready‑to‑use templates. It is inspired by the visual language of Perplexity.ai while preserving Aiotize’s distinct `AI` and `AIOTIZE INC.` display marks.
 
-Read the [.NET Brand Guidelines](dotnet-styleGuide-2024.pdf).
+### What’s inside
+- `design-system/`: Design tokens (colors, spacing, typography, motion), component CSS, and theming.
+- `brand/`: Logos, typefaces, color palettes, backgrounds, grids, and usage docs.
+- `docs/`: A static preview site showcasing tokens and components.
+- `templates/`: Simple HTML templates (hero, landing skeleton) using the design system.
 
-## Logo
+### Quick start (no build tools required)
+Open `docs/index.html` in your browser. It references the design tokens and components directly from the repo.
 
-The .NET logo is one of the most simple and direct visual representations of the .NET brand. The .NET logo purple color is #512bd4. Please read the brand guidelines for proper uses of the logo. 
+### Philosophy
+- Keep the `AI` and `AIOTIZE INC.` display wordmark unique to Aiotize.
+- Derive the rest of the system (layout, tone, gradients, controls) from a Perplexity‑like aesthetic: calm oceanic darks, clear contrast, elegant spacing, subtle borders, and smooth motion.
 
-See the [logo](/logo) folder.
+### Adding/Updating brand assets
+- Place final vector logos in `brand/logos/` (keep provided filenames to avoid breaking links in docs).
+- Add licensed font files to `brand/fonts/` and update the `@font-face` blocks in `design-system/tokens.css` and `brand/fonts/README.md`.
+- If you update color tokens in `design-system/tokens.css`, the docs and templates will pick them up automatically.
 
-## Illustrations
-These illustrations are more than sketches, they’re stories full of character, delightful surprises—and layers of meaning, many containing the [dotnet-bot](https://github.com/dotnet-bot). The dotnet-bot represents the community that comes with the .NET brand and platform. Dotnet-bot also helps with checking pull-requests on .NET repos. Please read the brand guidelines for proper uses. 
-
-See the [spot-illustrations](/spot-illustrations) folder.
-
-## Presentation Template
-You can use the presentation template as a starting point for your presentations to the .NET developer community. It contains type, theme colors, and illustrations that follow the brand guidelines. 
-
-See the [presentation-template](/presentation-template) folder.
-
-## Type
-
-The Open Sans typeface helps express the humanity in our voice and personality across all our communications. Open Sans is an open source typeface designed by Steve Matteson, Type Director of Ascender Corp.
-
-You can download it from Google Fonts: [fonts.google.com/specimen/Open+Sans](https://fonts.google.com/specimen/Open+Sans) 
-
-## License
-
-Illustrations in the brand repo are licensed under the very permissive [CC0 1.0 Universal license](https://github.com/dotnet/brand/blob/master/LICENSE). You may use the artwork to create your own .NET swag items to give away at community events, use the presentation template for your presentations, and use the illustrations and logo to represent .NET in related content, per the [.NET Brand Guidelines](dotnet-styleGuide-2024.pdf). 
-
-The .NET brand guidelines and .NET logo are copyright of the .NET authors. 
-
-The photos in the brand guidelines are all from [unsplash](https://unsplash.com) and are released under the [unsplash license](https://unsplash.com/license).
+### Legal & attribution
+- Do not copy Perplexity.ai proprietary marks or copyrighted assets. This repository implements an original theme and tokens inspired by their public aesthetic.
+- All original code in this repository is licensed MIT (see `LICENSE`). Your logos, fonts, and media remain your property under their respective licenses.
