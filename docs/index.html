@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Aiotize Design System</title>
+    <link rel="preload" href="../aiotize/brand/fonts/AiotizeDisplay.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="../aiotize/design-system/themes/base.css">
+    <style>
+      .hero {
+        padding: 64px 0 40px;
+        background: radial-gradient(1200px 800px at 85% 90%, rgba(32,128,141,.35), transparent 60%),
+                    radial-gradient(900px 600px at 5% 10%, rgba(255,255,255,.06), transparent 50%);
+        border-bottom: 1px solid var(--ai-color-border);
+      }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 16px; }
+      .logo {
+        font-family: var(--ai-font-display);
+        font-size: 40px;
+        letter-spacing: 3px;
+      }
+      .token-table { width: 100%; border-collapse: collapse; }
+      .token-table td { padding: 10px 8px; border-bottom: 1px solid var(--ai-color-border); }
+    </style>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container stack">
+        <div class="logo">AIOTIZE INC</div>
+        <div class="row">
+          <a class="btn primary" href="./downloads.html">Download Assets</a>
+          <a class="btn" href="https://aiotize.notion.site/AI-BASECAMP-1c0377585db2803e9b51c7505ada59ea?pvs=143" target="_blank" rel="noreferrer noopener">Brand Brief</a>
+        </div>
+        <p class="muted">Perplexity-inspired minimal UI. Keep the `AI` and `AIOTIZE INC` display type; adjust tokens for product surfaces.</p>
+      </div>
+    </header>
+
+    <main class="container stack">
+      <section class="stack">
+        <h2 class="h1">Colors</h2>
+        <div class="grid">
+          <div class="surface card stack"><div class="swatch" style="background: var(--ai-color-bg)"></div><div class="muted">Background</div></div>
+          <div class="surface card stack"><div class="swatch" style="background: var(--ai-color-surface)"></div><div class="muted">Surface</div></div>
+          <div class="surface card stack"><div class="swatch" style="background: var(--ai-color-primary)"></div><div class="muted">Primary</div></div>
+          <div class="surface card stack"><div class="swatch" style="background: var(--ai-color-border)"></div><div class="muted">Border</div></div>
+        </div>
+      </section>
+
+      <section class="stack">
+        <h2 class="h1">Typography</h2>
+        <div class="surface card stack">
+          <div style="font-family: var(--ai-font-display); font-size: 44px;">AI</div>
+          <div class="muted">Display: AiotizeDisplay</div>
+          <div style="font-family: var(--ai-font-ui); font-size: 18px;">Body uses Inter with generous tracking and calm contrast.</div>
+        </div>
+      </section>
+
+      <section class="stack">
+        <h2 class="h1">Components</h2>
+        <div class="surface card row">
+          <a class="btn primary" href="#">Primary</a>
+          <a class="btn" href="#">Neutral</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="container muted" style="padding-bottom: 64px;">
+      © Aiotize Inc. Design System
+    </footer>
+  </body>
+  </html>
+
